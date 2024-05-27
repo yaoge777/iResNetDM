@@ -1,0 +1,82 @@
+# DREME 5.5.5
+#     command: dreme -p /Users/richardyang/Downloads/5hmC_HS.fasta
+#   positives: 1172 from /Users/richardyang/Downloads/5hmC_HS.fasta (Wed Mar 27 16:21:52 HKT 2024)
+#   negatives: 1172 from shuffled positives
+#        host: richarddeMacBook-Air.local
+#        when: Wed Mar 27 16:22:30 HKT 2024
+
+MEME version 5.5.5
+
+ALPHABET "DNA" DNA-LIKE
+A "Adenine" CC0000 ~ T "Thymine" 008000
+C "Cytosine" 0000CC ~ G "Guanine" FFB300
+N "Any base" = ACGT
+X = ACGT
+. = ACGT
+V "Not T" = ACG
+H "Not G" = ACT
+D "Not C" = AGT
+B "Not A" = CGT
+M "Amino" = AC
+R "Purine" = AG
+W "Weak" = AT
+S "Strong" = CG
+Y "Pyrimidine" = CT
+K "Keto" = GT
+U = T
+END ALPHABET
+
+strands: + -
+
+Background letter frequencies (from dataset):
+A 0.222 C 0.264 G 0.292 T 0.221
+
+
+MOTIF BTTCC DREME-1
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST       BTTCC      GGAAV        367        245   5.8e-009   1.7e-004
+#            CTTCC      GGAAG        190        118   6.6e-006   2.0e-001
+#            TTTCC      GGAAA        124         80   7.9e-004   2.3e+001
+#            GTTCC      GGAAC         89         59   6.8e-003   2.0e+002
+
+letter-probability matrix: alength= 4 w= 5 nsites= 437 E= 1.7e-004
+0.000000 0.482838 0.208238 0.308924
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000 0.000000
+
+
+MOTIF TCCCCR DREME-2
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST      TCCCCR     YGGGGA        100         41   1.6e-007   4.6e-003
+#           TCCCCA     TGGGGA         61         22   7.8e-006   2.2e-001
+#           TCCCCG     CGGGGA         43         20   2.3e-003   6.4e+001
+
+letter-probability matrix: alength= 4 w= 6 nsites= 106 E= 4.6e-003
+0.000000 0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000 0.000000
+0.594340 0.000000 0.405660 0.000000
+
+
+MOTIF ACGK DREME-3
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST        ACGK       MCGT        347        244   5.8e-007   1.6e-002
+#             ACGG       CCGT        251        177   4.6e-005   1.3e+000
+#             ACGT       ACGT        111         70   9.5e-004   2.6e+001
+
+letter-probability matrix: alength= 4 w= 4 nsites= 389 E= 1.6e-002
+1.000000 0.000000 0.000000 0.000000
+0.000000 1.000000 0.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+0.000000 0.000000 0.683805 0.316195
+
+
+# Stopping reason: E-value threshold exceeded
+#    Running time: 3.52 seconds

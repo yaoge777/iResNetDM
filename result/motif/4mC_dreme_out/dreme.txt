@@ -1,0 +1,72 @@
+# DREME 5.5.5
+#     command: dreme -p "/Users/richardyang/Documents/cs project/DNApred_ResNet/data/5class/fasta/4mC.fasta"
+#   positives: 1000 from /Users/richardyang/Documents/cs project/DNApred_ResNet/data/5class/fasta/4mC.fasta (Mon Mar 25 10:27:12 HKT 2024)
+#   negatives: 1000 from shuffled positives
+#        host: richarddeMacBook-Air.local
+#        when: Mon Mar 25 10:59:02 HKT 2024
+
+MEME version 5.5.5
+
+ALPHABET "DNA" DNA-LIKE
+A "Adenine" CC0000 ~ T "Thymine" 008000
+C "Cytosine" 0000CC ~ G "Guanine" FFB300
+N "Any base" = ACGT
+X = ACGT
+. = ACGT
+V "Not T" = ACG
+H "Not G" = ACT
+D "Not C" = AGT
+B "Not A" = CGT
+M "Amino" = AC
+R "Purine" = AG
+W "Weak" = AT
+S "Strong" = CG
+Y "Pyrimidine" = CT
+K "Keto" = GT
+U = T
+END ALPHABET
+
+strands: + -
+
+Background letter frequencies (from dataset):
+A 0.270 C 0.247 G 0.221 T 0.262
+
+
+MOTIF CGRCGRC DREME-1
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST     CGRCGRC    GYCGYCG         66         12   8.2e-011   2.4e-006
+#          CGGCGGC    GCCGCCG         25          5   1.5e-004   4.3e+000
+#          CGGCGAC    GTCGCCG         18          2   1.9e-004   5.6e+000
+#          CGACGGC    GCCGTCG         22          4   2.5e-004   7.2e+000
+#          CGACGAC    GTCGTCG         14          1   4.7e-004   1.4e+001
+
+letter-probability matrix: alength= 4 w= 7 nsites= 73 E= 2.4e-006
+0.000000 1.000000 0.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+0.452055 0.000000 0.547945 0.000000
+0.000000 1.000000 0.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+0.424658 0.000000 0.575342 0.000000
+0.000000 1.000000 0.000000 0.000000
+
+
+MOTIF GCCGGAR DREME-2
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST     GCCGGAR    YTCCGGC         35          4   1.3e-007   3.8e-003
+#          GCCGGAG    CTCCGGC         21          2   3.0e-005   8.8e-001
+#          GCCGGAA    TTCCGGC         15          2   1.1e-003   3.3e+001
+
+letter-probability matrix: alength= 4 w= 7 nsites= 36 E= 3.8e-003
+0.000000 0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+1.000000 0.000000 0.000000 0.000000
+0.416667 0.000000 0.583333 0.000000
+
+
+# Stopping reason: E-value threshold exceeded
+#    Running time: 2.46 seconds

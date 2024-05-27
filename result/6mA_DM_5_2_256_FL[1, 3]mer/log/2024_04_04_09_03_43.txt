@@ -1,0 +1,14 @@
+2024_04_04_09_03_43INFO: io initialized
+2024_04_04_09_03_43INFO: vis initialized
+2024_04_04_09_03_43INFO: total sequences found: 36
+2024_04_04_09_03_43INFO: dataset loaded
+2024_04_04_09_03_44INFO: model loaded
+2024_04_04_09_03_44INFO: param loaded
+2024_04_04_09_03_44INFO: optimizer initialized
+2024_04_04_09_03_44INFO: No such mode
+2024_04_04_09_03_44INFO: loss_fn initialized
+2024_04_04_09_03_44INFO: test model start
+2024_04_04_09_03_44INFO: organism: 6mA_DM, motif: AAAAGAG
+2024_04_04_09_03_44INFO: test data over
+2024_04_04_09_03_44INFO: Performance: {'mc4': {'precision': 0.25, 'recall': 1.0, 'f1-score': 0.4, 'support': 1.0}, 'hmc5': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'ma6': {'precision': 1.0, 'recall': 0.9722222222222222, 'f1-score': 0.9859154929577464, 'support': 36.0}, 'mc5': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'neg': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.9, 'macro avg': {'precision': 0.25, 'recall': 0.3944444444444445, 'f1-score': 0.27718309859154927, 'support': 40.0}, 'weighted avg': {'precision': 0.90625, 'recall': 0.9, 'f1-score': 0.8973239436619718, 'support': 40.0}}
+2024_04_04_09_03_44INFO: test model over

@@ -1,0 +1,36 @@
+# DREME 5.5.5
+#     command: dreme -o 4mC_CE_DREME -p 4mC_CE.fasta
+#   positives: 183 from 4mC_CE.fasta (Thu Mar 28 13:46:38 HKT 2024)
+#   negatives: 183 from shuffled positives
+#        host: richarddeMacBook-Air.local
+#        when: Thu Mar 28 14:04:23 HKT 2024
+
+MEME version 5.5.5
+
+ALPHABET "DNA" DNA-LIKE
+A "Adenine" CC0000 ~ T "Thymine" 008000
+C "Cytosine" 0000CC ~ G "Guanine" FFB300
+N "Any base" = ACGT
+X = ACGT
+. = ACGT
+V "Not T" = ACG
+H "Not G" = ACT
+D "Not C" = AGT
+B "Not A" = CGT
+M "Amino" = AC
+R "Purine" = AG
+W "Weak" = AT
+S "Strong" = CG
+Y "Pyrimidine" = CT
+K "Keto" = GT
+U = T
+END ALPHABET
+
+strands: + -
+
+Background letter frequencies (from dataset):
+A 0.218 C 0.297 G 0.270 T 0.215
+
+
+# Stopping reason: E-value threshold exceeded
+#    Running time: 0.16 seconds

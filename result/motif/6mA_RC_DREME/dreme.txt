@@ -1,0 +1,52 @@
+# DREME 5.5.5
+#     command: dreme -o 6mA_RC_DREME -p 6mA_RC.fasta
+#   positives: 299 from 6mA_RC.fasta (Thu Mar 28 13:58:03 HKT 2024)
+#   negatives: 299 from shuffled positives
+#        host: richarddeMacBook-Air.local
+#        when: Thu Mar 28 14:08:27 HKT 2024
+
+MEME version 5.5.5
+
+ALPHABET "DNA" DNA-LIKE
+A "Adenine" CC0000 ~ T "Thymine" 008000
+C "Cytosine" 0000CC ~ G "Guanine" FFB300
+N "Any base" = ACGT
+X = ACGT
+. = ACGT
+V "Not T" = ACG
+H "Not G" = ACT
+D "Not C" = AGT
+B "Not A" = CGT
+M "Amino" = AC
+R "Purine" = AG
+W "Weak" = AT
+S "Strong" = CG
+Y "Pyrimidine" = CT
+K "Keto" = GT
+U = T
+END ALPHABET
+
+strands: + -
+
+Background letter frequencies (from dataset):
+A 0.316 C 0.203 G 0.233 T 0.247
+
+
+MOTIF AGGYAG DREME-1
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST      AGGYAG     CTRCCT         65         11   5.7e-012   9.0e-008
+#           AGGCAG     CTGCCT         47          6   6.4e-010   1.0e-005
+#           AGGTAG     CTACCT         19          5   2.8e-003   4.4e+001
+
+letter-probability matrix: alength= 4 w= 6 nsites= 68 E= 9.0e-008
+1.000000 0.000000 0.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+0.000000 0.691176 0.000000 0.308824
+1.000000 0.000000 0.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+
+
+# Stopping reason: E-value threshold exceeded
+#    Running time: 0.49 seconds

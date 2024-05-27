@@ -1,0 +1,14 @@
+2024_04_04_09_25_41INFO: io initialized
+2024_04_04_09_25_41INFO: vis initialized
+2024_04_04_09_25_41INFO: total sequences found: 25
+2024_04_04_09_25_42INFO: dataset loaded
+2024_04_04_09_25_42INFO: model loaded
+2024_04_04_09_25_42INFO: param loaded
+2024_04_04_09_25_42INFO: optimizer initialized
+2024_04_04_09_25_42INFO: No such mode
+2024_04_04_09_25_42INFO: loss_fn initialized
+2024_04_04_09_25_42INFO: test model start
+2024_04_04_09_25_42INFO: organism: 4mC_T, motif: GGCGGC
+2024_04_04_09_25_42INFO: test data over
+2024_04_04_09_25_42INFO: Performance: {'mc4': {'precision': 0.7777777777777778, 'recall': 0.56, 'f1-score': 0.6511627906976745, 'support': 25.0}, 'hmc5': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'ma6': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'mc5': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'neg': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.4827586206896552, 'macro avg': {'precision': 0.15555555555555556, 'recall': 0.11200000000000002, 'f1-score': 0.13023255813953488, 'support': 29.0}, 'weighted avg': {'precision': 0.6704980842911878, 'recall': 0.48275862068965525, 'f1-score': 0.5613472333600642, 'support': 29.0}}
+2024_04_04_09_25_42INFO: test model over

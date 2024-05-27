@@ -1,0 +1,67 @@
+<dreme version="5.5.5" release="Thu Sep 14 08:48:04 2023 +1000">
+  <model>
+    <command_line>dreme -p /Users/richardyang/Desktop/6mA_new.fasta</command_line>
+    <positives name="6mA new" count="1000" file="/Users/richardyang/Desktop/6mA_new.fasta" last_mod_date="Wed Mar 27 13:56:40 HKT 2024" />
+    <negatives name="shuffled positive sequences" count="1000" from="shuffled"/>
+    <alphabet name="DNA" like="dna">
+      <letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+      <letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+      <letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+      <letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+      <letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+      <letter id="V" symbol="V" equals="ACG" name="Not T"/>
+      <letter id="H" symbol="H" equals="ACT" name="Not G"/>
+      <letter id="D" symbol="D" equals="AGT" name="Not C"/>
+      <letter id="B" symbol="B" equals="CGT" name="Not A"/>
+      <letter id="M" symbol="M" equals="AC" name="Amino"/>
+      <letter id="R" symbol="R" equals="AG" name="Purine"/>
+      <letter id="W" symbol="W" equals="AT" name="Weak"/>
+      <letter id="S" symbol="S" equals="CG" name="Strong"/>
+      <letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+      <letter id="K" symbol="K" equals="GT" name="Keto"/>
+    </alphabet>
+    <strands>both</strands>
+    <background A="0.351" C="0.187" G="0.224" T="0.238" from="dataset"/>
+    <stop evalue="0.05"/>
+    <ngen>100</ngen>
+    <add_pv_thresh>0.01</add_pv_thresh>
+    <seed>1</seed>
+    <host>richarddeMacBook-Air.local</host>
+    <when>Wed Mar 27 13:57:25 HKT 2024</when>
+  </model>
+  <motifs>
+    <motif id="m01" alt="DREME-1" seq="AAAHGAG" length="7" nsites="106" p="103" n="29" pvalue="7.5e-012" evalue="2.1e-007" unerased_evalue="2.1e-007">
+      <pos A="1.000000" C="0.000000" G="0.000000" T="0.000000"/>
+      <pos A="1.000000" C="0.000000" G="0.000000" T="0.000000"/>
+      <pos A="1.000000" C="0.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.424528" C="0.283019" G="0.000000" T="0.292453"/>
+      <pos A="0.000000" C="0.000000" G="1.000000" T="0.000000"/>
+      <pos A="1.000000" C="0.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="0.000000" G="1.000000" T="0.000000"/>
+      <match seq="AAAAGAG" p="45" n="13" pvalue="1.2e-005" evalue="3.2e-001"/>
+      <match seq="AAACGAG" p="29" n="7" pvalue="1.4e-004" evalue="3.9e+000"/>
+      <match seq="AAATGAG" p="30" n="9" pvalue="4.8e-004" evalue="1.3e+001"/>
+    </motif>
+    <motif id="m02" alt="DREME-2" seq="ACCKA" length="5" nsites="188" p="181" n="93" pvalue="6.0e-009" evalue="1.7e-004" unerased_evalue="1.2e-004">
+      <pos A="1.000000" C="0.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="1.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="1.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.579787" T="0.420213"/>
+      <pos A="1.000000" C="0.000000" G="0.000000" T="0.000000"/>
+      <match seq="ACCGA" p="106" n="46" pvalue="2.4e-007" evalue="6.5e-003"/>
+      <match seq="ACCTA" p="78" n="48" pvalue="3.7e-003" evalue="1.0e+002"/>
+    </motif>
+    <motif id="m03" alt="DREME-3" seq="CCTCCTY" length="7" nsites="42" p="39" n="5" pvalue="5.3e-008" evalue="1.4e-003" unerased_evalue="5.5e-003">
+      <pos A="0.000000" C="1.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="1.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="1.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="1.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="0.500000" G="0.000000" T="0.500000"/>
+      <match seq="CCTCCTT" p="20" n="2" pvalue="5.6e-005" evalue="1.5e+000"/>
+      <match seq="CCTCCTC" p="19" n="3" pvalue="4.0e-004" evalue="1.1e+001"/>
+    </motif>
+  </motifs>
+  <run_time cpu="3.32" real="3.35" stop="evalue"/>
+</dreme>

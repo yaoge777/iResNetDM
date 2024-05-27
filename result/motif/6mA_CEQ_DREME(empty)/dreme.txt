@@ -1,0 +1,36 @@
+# DREME 5.5.5
+#     command: dreme -o 6mA_CEQ_DREME -p 6mA_CEQ.fasta
+#   positives: 1000 from 6mA_CEQ.fasta (Thu Mar 28 13:53:17 HKT 2024)
+#   negatives: 1000 from shuffled positives
+#        host: richarddeMacBook-Air.local
+#        when: Thu Mar 28 14:07:07 HKT 2024
+
+MEME version 5.5.5
+
+ALPHABET "DNA" DNA-LIKE
+A "Adenine" CC0000 ~ T "Thymine" 008000
+C "Cytosine" 0000CC ~ G "Guanine" FFB300
+N "Any base" = ACGT
+X = ACGT
+. = ACGT
+V "Not T" = ACG
+H "Not G" = ACT
+D "Not C" = AGT
+B "Not A" = CGT
+M "Amino" = AC
+R "Purine" = AG
+W "Weak" = AT
+S "Strong" = CG
+Y "Pyrimidine" = CT
+K "Keto" = GT
+U = T
+END ALPHABET
+
+strands: + -
+
+Background letter frequencies (from dataset):
+A 0.345 C 0.175 G 0.196 T 0.284
+
+
+# Stopping reason: E-value threshold exceeded
+#    Running time: 0.82 seconds

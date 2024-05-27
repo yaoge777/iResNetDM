@@ -1,0 +1,44 @@
+<dreme version="5.5.5" release="Thu Sep 14 08:48:04 2023 +1000">
+  <model>
+    <command_line>dreme -p "/Users/richardyang/Documents/cs project/DNApred_ResNet/data/5class/fasta/5hmC.fasta"</command_line>
+    <positives name="5hmC" count="1000" file="/Users/richardyang/Documents/cs project/DNApred_ResNet/data/5class/fasta/5hmC.fasta" last_mod_date="Mon Mar 25 10:37:33 HKT 2024" />
+    <negatives name="shuffled positive sequences" count="1000" from="shuffled"/>
+    <alphabet name="DNA" like="dna">
+      <letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+      <letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+      <letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+      <letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+      <letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+      <letter id="V" symbol="V" equals="ACG" name="Not T"/>
+      <letter id="H" symbol="H" equals="ACT" name="Not G"/>
+      <letter id="D" symbol="D" equals="AGT" name="Not C"/>
+      <letter id="B" symbol="B" equals="CGT" name="Not A"/>
+      <letter id="M" symbol="M" equals="AC" name="Amino"/>
+      <letter id="R" symbol="R" equals="AG" name="Purine"/>
+      <letter id="W" symbol="W" equals="AT" name="Weak"/>
+      <letter id="S" symbol="S" equals="CG" name="Strong"/>
+      <letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+      <letter id="K" symbol="K" equals="GT" name="Keto"/>
+    </alphabet>
+    <strands>both</strands>
+    <background A="0.236" C="0.281" G="0.225" T="0.257" from="dataset"/>
+    <stop evalue="0.05"/>
+    <ngen>100</ngen>
+    <add_pv_thresh>0.01</add_pv_thresh>
+    <seed>1</seed>
+    <host>richarddeMacBook-Air.local</host>
+    <when>Mon Mar 25 11:04:17 HKT 2024</when>
+  </model>
+  <motifs>
+    <motif id="m01" alt="DREME-1" seq="CTTYC" length="5" nsites="271" p="242" n="153" pvalue="3.5e-007" evalue="1.0e-002" unerased_evalue="1.0e-002">
+      <pos A="0.000000" C="1.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="0.538745" G="0.000000" T="0.461255"/>
+      <pos A="0.000000" C="1.000000" G="0.000000" T="0.000000"/>
+      <match seq="CTTCC" p="139" n="83" pvalue="4.2e-005" evalue="1.2e+000"/>
+      <match seq="CTTTC" p="120" n="75" pvalue="4.4e-004" evalue="1.3e+001"/>
+    </motif>
+  </motifs>
+  <run_time cpu="1.57" real="1.58" stop="evalue"/>
+</dreme>

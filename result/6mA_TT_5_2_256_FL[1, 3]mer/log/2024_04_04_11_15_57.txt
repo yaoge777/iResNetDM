@@ -1,0 +1,12 @@
+2024_04_04_11_15_57INFO: io initialized
+2024_04_04_11_15_57INFO: vis initialized
+2024_04_04_11_15_57INFO: dataset loaded
+2024_04_04_11_15_57INFO: model loaded
+2024_04_04_11_15_57INFO: param loaded
+2024_04_04_11_15_57INFO: optimizer initialized
+2024_04_04_11_15_57INFO: No such mode
+2024_04_04_11_15_57INFO: loss_fn initialized
+2024_04_04_11_15_57INFO: test model start
+2024_04_04_11_15_57INFO: test data over
+2024_04_04_11_15_57INFO: Performance: {'mc4': {'precision': 1.0, 'recall': 0.25, 'f1-score': 0.4, 'support': 4.0}, 'hmc5': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 0.0}, 'ma6': {'precision': 0.16666666666666666, 'recall': 1.0, 'f1-score': 0.2857142857142857, 'support': 2.0}, 'mc5': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 0.0}, 'neg': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 10.0}, 'accuracy': 0.1875, 'macro avg': {'precision': 0.23333333333333334, 'recall': 0.25, 'f1-score': 0.13714285714285715, 'support': 16.0}, 'weighted avg': {'precision': 0.2708333333333333, 'recall': 0.1875, 'f1-score': 0.13571428571428573, 'support': 16.0}}
+2024_04_04_11_15_57INFO: test model over

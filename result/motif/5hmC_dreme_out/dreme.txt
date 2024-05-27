@@ -1,0 +1,51 @@
+# DREME 5.5.5
+#     command: dreme -p "/Users/richardyang/Documents/cs project/DNApred_ResNet/data/5class/fasta/5hmC.fasta"
+#   positives: 1000 from /Users/richardyang/Documents/cs project/DNApred_ResNet/data/5class/fasta/5hmC.fasta (Mon Mar 25 10:37:33 HKT 2024)
+#   negatives: 1000 from shuffled positives
+#        host: richarddeMacBook-Air.local
+#        when: Mon Mar 25 11:04:17 HKT 2024
+
+MEME version 5.5.5
+
+ALPHABET "DNA" DNA-LIKE
+A "Adenine" CC0000 ~ T "Thymine" 008000
+C "Cytosine" 0000CC ~ G "Guanine" FFB300
+N "Any base" = ACGT
+X = ACGT
+. = ACGT
+V "Not T" = ACG
+H "Not G" = ACT
+D "Not C" = AGT
+B "Not A" = CGT
+M "Amino" = AC
+R "Purine" = AG
+W "Weak" = AT
+S "Strong" = CG
+Y "Pyrimidine" = CT
+K "Keto" = GT
+U = T
+END ALPHABET
+
+strands: + -
+
+Background letter frequencies (from dataset):
+A 0.236 C 0.281 G 0.225 T 0.257
+
+
+MOTIF CTTYC DREME-1
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST       CTTYC      GRAAG        242        153   3.5e-007   1.0e-002
+#            CTTCC      GGAAG        139         83   4.2e-005   1.2e+000
+#            CTTTC      GAAAG        120         75   4.4e-004   1.3e+001
+
+letter-probability matrix: alength= 4 w= 5 nsites= 271 E= 1.0e-002
+0.000000 1.000000 0.000000 0.000000
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.538745 0.000000 0.461255
+0.000000 1.000000 0.000000 0.000000
+
+
+# Stopping reason: E-value threshold exceeded
+#    Running time: 1.58 seconds

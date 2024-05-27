@@ -1,0 +1,12 @@
+2024_04_21_01_24_11INFO: io initialized
+2024_04_21_01_24_11INFO: vis initialized
+2024_04_21_01_24_11INFO: dataset loaded
+2024_04_21_01_24_11INFO: model loaded
+2024_04_21_01_24_11INFO: model adjusted
+2024_04_21_01_24_11INFO: optimizer initialized
+2024_04_21_01_24_11INFO: loss_fn initialized
+2024_04_21_01_24_11INFO: train model start
+2024_04_21_01_24_11INFO: learn name: Resnet_atten_5_2_256_FL
+2024_04_21_01_24_11INFO: config: Namespace(learn_name='Resnet_atten_5_2_256_FL', path_save='../result/', save_best=True, cuda_num=[3, 2], threshold=0.86, cuda=True, kmer=[1, 3], kernel_size=5, train_name=None, test_name=None, path_train_data1='../data/test.txt', path_train_data='../data/5class/sorted_5_class_train_data.tsv', path_test_data='../data/5class/sorted_5_class_test_data.tsv', path_params=None, model_save_name='BERT', save_figure_type='png', mode='train_test', num_class=5, model='BERT', interval_log=10, interval_test=1, epoch=25, optimizer='AdamW', loss_fn='FL', contrastive_loss=False, word_num=5, d_model=256, layers_num=2, resnet_layer=5, lstm_layers=1, heads_num=8, seq_num=42, hidden=256, dropout=0.2, ff='linear', rep='default', batch_size=64, lr=5e-05, growth_rate=2, reg=0.0, b=0.06, gamma=2, temp=0.1, label=0, motif='A', s=20, e=21)
+2024_04_21_01_28_15INFO: Performance: {'mc4': {'precision': 0.834, 'recall': 0.7693726937269373, 'f1-score': 0.8003838771593089, 'support': 1084.0, 'accuracy': 0.9168, 'mcc': 0.7489105410401272}, 'hmc5': {'precision': 0.836, 'recall': 0.8212180746561886, 'f1-score': 0.8285431119920713, 'support': 1018.0, 'accuracy': 0.9308, 'mcc': 0.7852489296308118}, 'ma6': {'precision': 0.84, 'recall': 0.8195121951219512, 'f1-score': 0.8296296296296296, 'support': 1025.0, 'accuracy': 0.931, 'mcc': 0.7864719444096253}, 'mc5': {'precision': 0.739, 'recall': 0.8094194961664841, 'f1-score': 0.7726084683742812, 'support': 913.0, 'accuracy': 0.913, 'mcc': 0.7200943814928933}, 'neg': {'precision': 0.802, 'recall': 0.8354166666666667, 'f1-score': 0.8183673469387756, 'support': 960.0, 'accuracy': 0.9288, 'mcc': 0.7743611294663371}, 'accuracy': 0.8102, 'macro avg': {'precision': 0.8102, 'recall': 0.8109878252676456, 'f1-score': 0.8099064868188133, 'support': 5000.0}, 'weighted avg': {'precision': 0.8121461999999999, 'recall': 0.8102, 'f1-score': 0.8104935131811867, 'support': 5000.0}}
+2024_04_21_01_28_44INFO: train model over

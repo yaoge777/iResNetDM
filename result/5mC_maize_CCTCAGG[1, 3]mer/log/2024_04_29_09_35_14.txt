@@ -1,0 +1,10 @@
+2024_04_29_09_35_14INFO: io initialized
+2024_04_29_09_35_14INFO: vis initialized
+2024_04_29_09_35_14INFO: dataset loaded
+2024_04_29_09_35_14INFO: model loaded
+2024_04_29_09_35_14INFO: param loaded
+2024_04_29_09_35_14INFO: optimizer initialized
+2024_04_29_09_35_14INFO: loss_fn initialized
+2024_04_29_09_35_14INFO: test model start
+2024_04_29_09_35_14INFO: test data over, acc: (0.8260869565217391, False)
+2024_04_29_09_35_14INFO: test model over
