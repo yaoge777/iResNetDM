@@ -1,9 +1,0 @@
-2024_04_04_11_12_50INFO: io initialized
-2024_04_04_11_12_50INFO: vis initialized
-2024_04_04_11_12_51INFO: dataset loaded
-2024_04_04_11_12_51INFO: model loaded
-2024_04_04_11_12_51INFO: param loaded
-2024_04_04_11_12_51INFO: optimizer initialized
-2024_04_04_11_12_51INFO: No such mode
-2024_04_04_11_12_51INFO: loss_fn initialized
-2024_04_04_11_12_51INFO: test model start
